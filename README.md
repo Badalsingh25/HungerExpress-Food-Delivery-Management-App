@@ -1,4 +1,4 @@
-# 🍽️ HungerExpress – Food Delivery Platform
+<img width="1920" height="1080" alt="Screenshot 2025-11-23 000552" src="https://github.com/user-attachments/assets/fface8fd-d605-4229-a8ea-a85dc44ac473" /># 🍽️ HungerExpress – Food Delivery Platform
 
 Your Swiggy/Zomato-style full-stack food delivery and restaurant management web app.  
 
@@ -160,13 +160,16 @@ ng serve
 🔹 Restaurant Owner Screenshots
 
 1️⃣ Restaurant Profile Management
-<img width="900" alt="Restaurant Profile Management" src="https://github.com/user-attachments/assets/images/Screenshot 2025-11-23 000320.png" />
+<img width="1920" height="1080" alt="Screenshot 2025-11-23 001210" src="https://github.com/user-attachments/assets/297564ed-435f-43a4-9034-84182af468f0" />
+
+
 
 2️⃣ Menu Management
-<img width="900" alt="Menu Management" src="https://github.com/user-attachments/assets/8f2be580-a28e-47d7-803e-405858fce272" />
+<img width="1920" height="1080" alt="Screenshot 2025-11-23 000552" src="https://github.com/user-attachments/assets/aef6148c-cf89-499a-837b-1d5cd11145ec" />
 
 3️⃣ Order Management
-<img width="900" alt="Order Management" src="https://github.com/user-attachments/assets/940a1d53-2430-498d-a5cb-dc496cbc67d4" />
+<img width="1920" height="1080" alt="Screenshot 2025-11-23 000641" src="https://github.com/user-attachments/assets/07ffed6f-9b09-42d8-a01c-a5d569ad5ee3" />
+
 
 4️⃣ Analytics Dashboard
 <img width="900" alt="Analytics" src="https://github.com/user-attachments/assets/c71918a7-33e7-464f-86ec-362dfc2d0f33" />
