@@ -173,7 +173,7 @@ ng serve
 
 ### 🔹 Customer Experience
 
-1️⃣ Home / Landing Page
+1️⃣ **Home / Landing Page**
 <img width="1919" src="https://github.com/user-attachments/assets/52e95012-5a06-41f3-8d08-64967b7170c5" />
 
 2️⃣ **Restaurant Listing**
