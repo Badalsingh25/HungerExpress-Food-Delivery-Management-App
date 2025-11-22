@@ -1,4 +1,4 @@
-🍽️ HungerExpress – Food Delivery App and Management Platform
+# 🍽️ HungerExpress – Full-Stack Food Delivery & Management Platform
 
 Your Swiggy/Zomato-style full-stack food delivery and restaurant management web app.  
 
@@ -154,38 +154,35 @@ ng serve
 ---
 
 📸 Screenshots
+🔹 Restaurant Owner Dashboard
 
-### 🔹 Restaurant Owner Screenshots
+1️⃣ Restaurant Profile Management
+<img width="1919" height="904" src="https://github.com/user-attachments/assets/3be0976a-cdc7-48d6-b85c-6f475721438d" />
 
-1️⃣ **Restaurant Profile Management**  
-<img width="1919" height="904" alt="Screenshot 2025-11-23 000320" src="https://github.com/user-attachments/assets/3be0976a-cdc7-48d6-b85c-6f475721438d" />
+2️⃣ Menu Management
+<img width="1920" height="910" src="https://github.com/user-attachments/assets/cbdd49e1-16cb-4646-a3b4-4808cca2ff76" />
 
-2️⃣ **Menu Management**  
-<img width="1920" height="910" alt="Screenshot 2025-11-23 000552" src="https://github.com/user-attachments/assets/cbdd49e1-16cb-4646-a3b4-4808cca2ff76" />
+3️⃣ Order Management
+<img width="1920" height="924" src="https://github.com/user-attachments/assets/22c3f89b-05fb-442f-a3b8-1059ccfad01a" />
 
-3️⃣ **Order Management**  
-<img width="1920" height="924" alt="Screenshot 2025-11-23 000641" src="https://github.com/user-attachments/assets/22c3f89b-05fb-442f-a3b8-1059ccfad01a" />
+4️⃣ Analytics Dashboard
+<img width="1919" height="918" src="https://github.com/user-attachments/assets/c1c18a29-cd26-4fb8-b20d-12305aedad70" />
 
-4️⃣ **Analytics Dashboard**  
-<img width="1919" height="918" alt="Screenshot 2025-11-23 003728" src="https://github.com/user-attachments/assets/c1c18a29-cd26-4fb8-b20d-12305aedad70" />
+🔹 Admin Panel
 
+1️⃣ User & Role Management
+<img width="1913" height="916" src="https://github.com/user-attachments/assets/d1bcbfb2-d8c8-41cc-9d9e-7ea710f19f33" />
 
-### 🔹 Admin Panel Screenshots
+2️⃣ Restaurant Approvals
+<img width="1897" height="919" src="https://github.com/user-attachments/assets/a18cfd75-d519-40ba-a14c-4f474cbb46cd" />
 
-1️⃣ **User & Role Management**  
-<img width="1913" height="916" alt="Screenshot 2025-11-23 002516" src="https://github.com/user-attachments/assets/d1bcbfb2-d8c8-41cc-9d9e-7ea710f19f33" />
+3️⃣ Menu Item Details
+<img width="1901" height="907" src="https://github.com/user-attachments/assets/968e5f0f-eeb8-45da-af42-beee27b02432" />
 
-2️⃣ **Restaurant & Menu Approvals**  
-<img width="1897" height="919" alt="Screenshot 2025-11-23 002553" src="https://github.com/user-attachments/assets/a18cfd75-d519-40ba-a14c-4f474cbb46cd" />
+4️⃣ Orders & Payments
+<img width="1919" height="912" src="https://github.com/user-attachments/assets/77e200bd-d58d-4052-bdc2-d827f07a2e88" />### 🔹 Customer Screenshots
 
-3️⃣ **Menu & Item Details**  
-<img width="1901" height="907" alt="Screenshot 2025-11-23 002638" src="https://github.com/user-attachments/assets/968e5f0f-eeb8-45da-af42-beee27b02432" />
-
-4️⃣ **Order & Payment Oversight**  
-<img width="1919" height="912" alt="Screenshot 2025-11-23 002713" src="https://github.com/user-attachments/assets/77e200bd-d58d-4052-bdc2-d827f07a2e88" />
-
-
-### 🔹 Customer Screenshots
+🔹 Customer Experience
 
 1️⃣ **Home / Landing Page**  
 <img width="1919" height="915" alt="Screenshot 2025-11-23 002742" src="https://github.com/user-attachments/assets/52e95012-5a06-41f3-8d08-64967b7170c5" />
@@ -204,18 +201,16 @@ ng serve
 
 <img width="1919" height="914" alt="Screenshot 2025-11-23 003444" src="https://github.com/user-attachments/assets/f7895d87-ae9f-4f05-b5f2-23ea32fcecf8" />
 
+🔹 Delivery Agent Panel
 
-### 🔹 Delivery Agent Screenshots
+1️⃣ Assigned Orders
+<img width="1919" height="918" src="https://github.com/user-attachments/assets/a5e358f7-6082-4429-829a-aa88d055c4f5" />
 
-1️⃣ **Assigned Orders Management**  
-<img width="1919" height="918" alt="Screenshot 2025-11-23 003211" src="https://github.com/user-attachments/assets/a5e358f7-6082-4429-829a-aa88d055c4f5" />
+2️⃣ Delivery Workflow
+<img width="1919" height="916" src="https://github.com/user-attachments/assets/dcd9724d-56ee-4c27-bcc2-d65b0bf3aa75" />
 
-2️⃣ **Delivery Workflow**  
-<img width="1919" height="916" alt="Screenshot 2025-11-23 003257" src="https://github.com/user-attachments/assets/dcd9724d-56ee-4c27-bcc2-d65b0bf3aa75" />
-
-3️⃣ **Check Status after Delivery**  
-<img width="1919" height="917" alt="Screenshot 2025-11-23 003508" src="https://github.com/user-attachments/assets/011cf796-588a-40df-9735-9d0635aaafbf" />
-
+3️⃣ Delivery Completion Status
+<img width="1919" height="917" src="https://github.com/user-attachments/assets/011cf796-588a-40df-9735-9d0635aaafbf" />
 ---
 
 
