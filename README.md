@@ -152,9 +152,10 @@ ng serve
 ```
 
 ---
+
+
 ## 📸 Screenshots
 
----
 
 ### 🔹 Restaurant Owner Screenshots
 
@@ -170,7 +171,9 @@ ng serve
 #### 4️⃣ Analytics Dashboard
 <img width="900" alt="Analytics" src="https://github.com/user-attachments/assets/c71918a7-33e7-464f-86ec-362dfc2d0f33" />
 
+
 ---
+
 
 ### 🔹 Admin Panel Screenshots
 
@@ -186,7 +189,9 @@ ng serve
 #### 4️⃣ Order & Payment Oversight
 <img width="900" alt="Payment Oversight" src="https://github.com/user-attachments/assets/c71918a7-33e7-464f-86ec-362dfc2d0f33" />
 
+
 ---
+
 
 ### 🔹 Customer Screenshots
 
@@ -218,7 +223,9 @@ ng serve
 #### 3️⃣ Earnings & History
 <img width="900" alt="Earnings History" src="https://github.com/user-attachments/assets/940a1d53-2430-498d-a5cb-dc496cbc67d4" />
 
+
 ---
+
 
 
 ## 📊 Languages  
