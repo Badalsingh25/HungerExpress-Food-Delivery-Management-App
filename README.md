@@ -121,7 +121,6 @@ HungerExpress-Food-Delivery-Management-App/
 ✅ Prerequisites
 
 ```
-
 Java 17+
 
 Node.js 18+
@@ -140,22 +139,18 @@ cd backend
 mvn spring-boot:run
 
 ```
-
 ▶️ Frontend Setup
 ```
 cd frontend
 npm install
 ng serve
-
 ```
 
 ✅ Frontend → http://localhost:4200
 ✅ Backend API → http://localhost:8080
 
 ```
-
 ---
-
 ## 📸 Screenshots 
 
 
