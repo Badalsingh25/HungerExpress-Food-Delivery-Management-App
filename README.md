@@ -155,7 +155,10 @@ ng serve
 
 ## 📸 Screenshots 
 
-```
+
+---
+
+
 🔹 Restaurant Owner screenshots
 
 
@@ -175,7 +178,7 @@ ng serve
 
 <img width="1890" height="897" alt="Screenshot 2025-08-25 092106" src="https://github.com/user-attachments/assets/c71918a7-33e7-464f-86ec-362dfc2d0f33" />
 
-```
+---
 
 🔹 Admin ‑side screenshots
 
@@ -196,7 +199,7 @@ ng serve
 
 <img width="1890" height="897" alt="Screenshot 2025-08-25 092106" src="https://github.com/user-attachments/assets/c71918a7-33e7-464f-86ec-362dfc2d0f33" />
 
-```
+---
 
 🔹 Customer‑side screenshots
 
@@ -221,7 +224,7 @@ ng serve
 
 <img width="1890" height="902" alt="Screenshot 2025-08-25 092143" src="https://github.com/user-attachments/assets/8c166ce9-e294-4ca8-b7d1-59c5ca8eeb14" />
 
-```
+---
 
 🔹 Delivery Agent
 
@@ -238,7 +241,7 @@ ng serve
 
 <img width="1888" height="751" alt="Screenshot 2025-08-25 092911" src="https://github.com/user-attachments/assets/940a1d53-2430-498d-a5cb-dc496cbc67d4" />
 
-```
+---
 
 
 ## 📊 Languages  
