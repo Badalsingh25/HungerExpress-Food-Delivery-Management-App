@@ -115,7 +115,12 @@ HungerExpress-Food-Delivery-Management-App/
 ```
 
 🚀 Getting Started
+
+---
+
 ✅ Prerequisites
+
+```
 
 Java 17+
 
@@ -130,12 +135,14 @@ Maven
 ```
 
 ▶️ Backend Setup
+```
 cd backend
 mvn spring-boot:run
 
 ```
 
 ▶️ Frontend Setup
+```
 cd frontend
 npm install
 ng serve
@@ -146,6 +153,8 @@ ng serve
 ✅ Backend API → http://localhost:8080
 
 ```
+
+---
 
 ## 📸 Screenshots 
 
