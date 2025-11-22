@@ -152,67 +152,64 @@ ng serve
 
 ```
 ---
-
 📸 Screenshots
 🔹 Restaurant Owner Dashboard
 
 1️⃣ Restaurant Profile Management
-<img width="1919" height="904" src="https://github.com/user-attachments/assets/3be0976a-cdc7-48d6-b85c-6f475721438d" />
+<img width="1919" src="https://github.com/user-attachments/assets/3be0976a-cdc7-48d6-b85c-6f475721438d" />
 
 2️⃣ Menu Management
-<img width="1920" height="910" src="https://github.com/user-attachments/assets/cbdd49e1-16cb-4646-a3b4-4808cca2ff76" />
+<img width="1920" src="https://github.com/user-attachments/assets/cbdd49e1-16cb-4646-a3b4-4808cca2ff76" />
 
 3️⃣ Order Management
-<img width="1920" height="924" src="https://github.com/user-attachments/assets/22c3f89b-05fb-442f-a3b8-1059ccfad01a" />
+<img width="1920" src="https://github.com/user-attachments/assets/22c3f89b-05fb-442f-a3b8-1059ccfad01a" />
 
 4️⃣ Analytics Dashboard
-<img width="1919" height="918" src="https://github.com/user-attachments/assets/c1c18a29-cd26-4fb8-b20d-12305aedad70" />
+<img width="1919" src="https://github.com/user-attachments/assets/c1c18a29-cd26-4fb8-b20d-12305aedad70" />
 
 🔹 Admin Panel
 
 1️⃣ User & Role Management
-<img width="1913" height="916" src="https://github.com/user-attachments/assets/d1bcbfb2-d8c8-41cc-9d9e-7ea710f19f33" />
+<img width="1913" src="https://github.com/user-attachments/assets/d1bcbfb2-d8c8-41cc-9d9e-7ea710f19f33" />
 
 2️⃣ Restaurant Approvals
-<img width="1897" height="919" src="https://github.com/user-attachments/assets/a18cfd75-d519-40ba-a14c-4f474cbb46cd" />
+<img width="1897" src="https://github.com/user-attachments/assets/a18cfd75-d519-40ba-a14c-4f474cbb46cd" />
 
 3️⃣ Menu Item Details
-<img width="1901" height="907" src="https://github.com/user-attachments/assets/968e5f0f-eeb8-45da-af42-beee27b02432" />
+<img width="1901" src="https://github.com/user-attachments/assets/968e5f0f-eeb8-45da-af42-beee27b02432" />
 
-4️⃣ Orders & Payments
-<img width="1919" height="912" src="https://github.com/user-attachments/assets/77e200bd-d58d-4052-bdc2-d827f07a2e88" />### 🔹 Customer Screenshots
+4️⃣ Orders & Payments Overview
+<img width="1919" src="https://github.com/user-attachments/assets/77e200bd-d58d-4052-bdc2-d827f07a2e88" />
 
 🔹 Customer Experience
 
-1️⃣ **Home / Landing Page**  
-<img width="1919" height="915" alt="Screenshot 2025-11-23 002742" src="https://github.com/user-attachments/assets/52e95012-5a06-41f3-8d08-64967b7170c5" />
+1️⃣ Home / Landing Page
+<img width="1919" src="https://github.com/user-attachments/assets/52e95012-5a06-41f3-8d08-64967b7170c5" />
 
-2️⃣ **Restaurant Listing**  
-<img width="1919" height="912" alt="Screenshot 2025-11-23 002836" src="https://github.com/user-attachments/assets/f38cd2ee-a7b7-47ed-85bc-7b69d53a3c3e" />
+2️⃣ Restaurant Listing
+<img width="1919" src="https://github.com/user-attachments/assets/f38cd2ee-a7b7-47ed-85bc-7b69d53a3c3e" />
 
-3️⃣ **Menu & Item Details**  
-<img width="1919" height="909" alt="Screenshot 2025-11-23 002909" src="https://github.com/user-attachments/assets/8a50816d-32b3-4c16-aa62-ade5c09b5d48" />
+3️⃣ Menu & Item Details
+<img width="1919" src="https://github.com/user-attachments/assets/8a50816d-32b3-4c16-aa62-ade5c09b5d48" />
 
-4️⃣ **Cart & Checkout**  
-<img width="1919" height="912" alt="Screenshot 2025-11-23 002947" src="https://github.com/user-attachments/assets/4515d21f-37a1-4e5e-ab29-e9dd294402ea" />
+4️⃣ Cart & Checkout
+<img width="1919" src="https://github.com/user-attachments/assets/4515d21f-37a1-4e5e-ab29-e9dd294402ea" />
 
-5️⃣ **Payment and My Orders (All Orders List)**  
-<img width="1919" height="914" alt="Screenshot 2025-11-23 003051" src="https://github.com/user-attachments/assets/ffa7f3c2-0e00-4910-8316-a1f80d20561e" />
-
-<img width="1919" height="914" alt="Screenshot 2025-11-23 003444" src="https://github.com/user-attachments/assets/f7895d87-ae9f-4f05-b5f2-23ea32fcecf8" />
+5️⃣ My Orders & Payments
+<img width="1919" src="https://github.com/user-attachments/assets/ffa7f3c2-0e00-4910-8316-a1f80d20561e" />
+<img width="1919" src="https://github.com/user-attachments/assets/f7895d87-ae9f-4f05-b5f2-23ea32fcecf8" />
 
 🔹 Delivery Agent Panel
 
 1️⃣ Assigned Orders
-<img width="1919" height="918" src="https://github.com/user-attachments/assets/a5e358f7-6082-4429-829a-aa88d055c4f5" />
+<img width="1919" src="https://github.com/user-attachments/assets/a5e358f7-6082-4429-829a-aa88d055c4f5" />
 
 2️⃣ Delivery Workflow
-<img width="1919" height="916" src="https://github.com/user-attachments/assets/dcd9724d-56ee-4c27-bcc2-d65b0bf3aa75" />
+<img width="1919" src="https://github.com/user-attachments/assets/dcd9724d-56ee-4c27-bcc2-d65b0bf3aa75" />
 
 3️⃣ Delivery Completion Status
-<img width="1919" height="917" src="https://github.com/user-attachments/assets/011cf796-588a-40df-9735-9d0635aaafbf" />
+<img width="1919" src="https://github.com/user-attachments/assets/011cf796-588a-40df-9735-9d0635aaafbf" />
 ---
-
 
 ```
 
