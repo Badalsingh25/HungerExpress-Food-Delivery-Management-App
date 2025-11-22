@@ -140,8 +140,9 @@ ng serve
 
 ✅ Backend API → http://localhost:8080
 
-📸 Screenshots
-
+---
+### 📸 Screenshots
+```
 ### 🔹 Restaurant Owner Screenshots
 
 1️⃣ **Restaurant Profile Management**  
@@ -198,7 +199,8 @@ ng serve
 
 3️⃣ Delivery Completion Status
 <img width="1919" src="https://github.com/user-attachments/assets/011cf796-588a-40df-9735-9d0635aaafbf" />
-
+```
+---
 📊 Languages (GitHub Stats)
 TypeScript   54.7%
 Java         33.2%
