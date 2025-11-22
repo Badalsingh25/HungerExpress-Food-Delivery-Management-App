@@ -111,3 +111,110 @@ HungerExpress-Food-Delivery-Management-App/
     ├── 01_complete_schema.sql
     ├── 02_seed_data.sql
     └── other_debug_scripts.sql
+
+
+🚀 Getting Started
+✅ Prerequisites
+
+Java 17+
+
+Node.js 18+
+
+Angular CLI
+
+MySQL 8+
+
+Maven
+
+▶️ Backend Setup
+cd backend
+mvn spring-boot:run
+
+▶️ Frontend Setup
+cd frontend
+npm install
+ng serve
+
+
+✅ Frontend → http://localhost:4200
+✅ Backend API → http://localhost:8080
+
+📸 Screenshots
+
+(Add your own image links — GitHub drag & drop recommended)
+
+1️⃣ Landing Page
+
+2️⃣ Restaurant Listing
+
+3️⃣ Cart & Checkout
+
+4️⃣ Admin Dashboard
+
+📊 Languages Breakdown
+
+
+
+
+
+
+🤝 Contributing
+
+Contributions are welcome! 🎉
+
+Fork the repo
+
+Create a feature branch:
+
+git checkout -b feature-name
+
+
+Commit changes:
+
+git commit -m "Added feature"
+
+
+Push & open a Pull Request ✅
+
+✅ Issues, docs, UI, backend & testing contributions encouraged
+✅ Beginner-friendly repo
+
+📬 Contact
+
+👨‍💻 Badal Singh
+📧 Email — badalkusingh8@gmail.com
+🐙 GitHub — https://github.com/Badalsingh25
+
+🔗 LinkedIn — (Add your profile link)
+
+📝 License
+
+This project is licensed under the MIT License.
+Feel free to use, modify & contribute responsibly ✅
+
+⭐ Support the Project
+
+If you like this project:
+
+✅ Star ⭐ the repo
+✅ Share it with others
+✅ Follow for more full-stack projects!
+
+💙 Built with passion, clean architecture & real-world development practices
+
+
+---
+
+✅ Fully structured  
+✅ Includes everything from your screenshots  
+✅ Ready for GitHub copy-paste  
+✅ Professional & contributor-friendly
+
+If you want:
+✅ A banner/logo  
+✅ Demo video badge  
+✅ Deployment (Render/AWS/Netlify) section  
+✅ API documentation (Swagger/Postman)  
+✅ Table of contents
+
+— tell me, I’ll generate it ✅
