@@ -1,4 +1,4 @@
-# 🍽️ HungerExpress – Full-Stack Food Delivery & Management Platform
+# 🍽️ HungerExpress – Food Delivery App & Management Platform
 
 Your Swiggy/Zomato-style full-stack food delivery and restaurant management web app.  
 
@@ -141,18 +141,19 @@ ng serve
 ✅ Backend API → http://localhost:8080
 
 📸 Screenshots
-🔹 Restaurant Owner Dashboard
 
-1️⃣ Restaurant Profile Management
+### 🔹 Restaurant Owner Screenshots
+
+1️⃣ **Restaurant Profile Management**  
 <img width="1919" src="https://github.com/user-attachments/assets/3be0976a-cdc7-48d6-b85c-6f475721438d" />
 
-2️⃣ Menu Management
+2️⃣ **Menu Management**  
 <img width="1920" src="https://github.com/user-attachments/assets/cbdd49e1-16cb-4646-a3b4-4808cca2ff76" />
 
-3️⃣ Order Management
+3️⃣ **Order Management**  
 <img width="1920" src="https://github.com/user-attachments/assets/22c3f89b-05fb-442f-a3b8-1059ccfad01a" />
 
-4️⃣ Analytics Dashboard
+4️⃣ **Analytics Dashboard**  
 <img width="1919" src="https://github.com/user-attachments/assets/c1c18a29-cd26-4fb8-b20d-12305aedad70" />
 
 🔹 Admin Panel
