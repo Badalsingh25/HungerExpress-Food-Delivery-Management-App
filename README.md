@@ -147,94 +147,54 @@ ng serve
 
 ```
 
-📸 Screenshots
+## 📸 Screenshots 
 
-(Add your own image links — GitHub drag & drop recommended)
 
-1️⃣ Landing Page
+1️⃣ Home Dashboard  
 
-2️⃣ Restaurant Listing
+<img width="1899" height="808" alt="Screenshot 2025-08-25 091858" src="https://github.com/user-attachments/assets/f7c19a97-9c69-4a4b-8a81-2fea51fa9f40" />
 
-3️⃣ Cart & Checkout
+2️⃣ Chatbot Conversation Window 
 
-4️⃣ Admin Dashboard
+<img width="1844" height="895" alt="Screenshot 2025-08-25 092337" src="https://github.com/user-attachments/assets/8f2be580-a28e-47d7-803e-405858fce272" />
+
+3️⃣ Emotion Detection (Webcam/Text)  
+
+<img width="1888" height="751" alt="Screenshot 2025-08-25 092911" src="https://github.com/user-attachments/assets/940a1d53-2430-498d-a5cb-dc496cbc67d4" />
+
+4️⃣ Meditation Timer
+
+<img width="1890" height="897" alt="Screenshot 2025-08-25 092106" src="https://github.com/user-attachments/assets/c71918a7-33e7-464f-86ec-362dfc2d0f33" />
+
+5️⃣Our Mission
+
+<img width="1890" height="902" alt="Screenshot 2025-08-25 092143" src="https://github.com/user-attachments/assets/8c166ce9-e294-4ca8-b7d1-59c5ca8eeb14" />
+
+6️⃣How MindEase Works
+
+<img width="1892" height="883" alt="Screenshot 2025-08-25 091932" src="https://github.com/user-attachments/assets/2646d22a-8b22-4d14-a40d-99d53a7186bc" />
+
+---
+
+
+## 📊 Languages  
+
+```text
+JavaScript   31.0% ████████████░░░░░░░░░░  
+CSS          27.6% ████████░░░░░░░░░░░░░░  
+HTML         27.1% ████████░░░░░░░░░░░░░░  
+Python       14.3% ███░░░░░░░░░░░░░░░░░░░  
 
 ```
-
-📊 Languages Breakdown
-
-
-
-
-
-
-```
+-----
 
 🤝 Contributing
+<p align="center"> <a href="https://github.com/Badalsingh25/mind-ease/fork"> <img src="https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge&logo=github" /> </a> <a href="https://github.com/Badalsingh25/mind-ease/fork"> <img src="https://img.shields.io/badge/Fork%20Repo-blue?style=for-the-badge&logo=github" /> </a> <a href="https://github.com/Badalsingh25/mind-ease/pulls"> <img src="https://img.shields.io/badge/Pull%20Request-orange?style=for-the-badge&logo=git" /> </a> </p>
 
-```
+---
 
-Contributions are welcome! 🎉
+📩 Contact
+<p align="center"> <a href="mailto:badalkusingh8@gmail.com"> <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /> </a> <a href="https://github.com/Badalsingh25"> <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /> </a> <a href="https://www.linkedin.com/in/badal-singh-767911333/"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /> </a> </p>
 
-Fork the repo
-
-Create a feature branch:
-
-git checkout -b feature-name
-
-
-Commit changes:
-
-git commit -m "Added feature"
-
-
-Push & open a Pull Request ✅
-
-✅ Issues, docs, UI, backend & testing contributions encouraged
-✅ Beginner-friendly repo
-
-```
-
-📬 Contact
-
-👨‍💻 Badal Singh
-📧 Email — badalkusingh8@gmail.com
-🐙 GitHub — https://github.com/Badalsingh25
-
-🔗 LinkedIn — (Add your profile link)
-
-```
-
-📝 License
-
-This project is licensed under the MIT License.
-Feel free to use, modify & contribute responsibly ✅
-
-```
-
-⭐ Support the Project
-
-If you like this project:
-
-✅ Star ⭐ the repo
-✅ Share it with others
-✅ Follow for more full-stack projects!
-
-💙 Built with passion, clean architecture & real-world development practices
-
-
-```
-
-✅ Fully structured  
-✅ Includes everything from your screenshots  
-✅ Ready for GitHub copy-paste  
-✅ Professional & contributor-friendly
-
-If you want:
-✅ A banner/logo  
-✅ Demo video badge  
-✅ Deployment (Render/AWS/Netlify) section  
-✅ API documentation (Swagger/Postman)  
-✅ Table of contents
-
-— tell me, I’ll generate it ✅
+---
+⭐ If you like this project, don’t forget to star the repo! ⭐
