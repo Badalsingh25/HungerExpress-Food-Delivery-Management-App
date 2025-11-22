@@ -161,10 +161,13 @@ ng serve
 
 1️⃣ Restaurant Profile Management
 <img width="900" alt="Restaurant Profile Management" src="https://github.com/user-attachments/assets/f7c19a97-9c69-4a4b-8a81-2fea51fa9f40" />
+
 2️⃣ Menu Management
 <img width="900" alt="Menu Management" src="https://github.com/user-attachments/assets/8f2be580-a28e-47d7-803e-405858fce272" />
+
 3️⃣ Order Management
 <img width="900" alt="Order Management" src="https://github.com/user-attachments/assets/940a1d53-2430-498d-a5cb-dc496cbc67d4" />
+
 4️⃣ Analytics Dashboard
 <img width="900" alt="Analytics" src="https://github.com/user-attachments/assets/c71918a7-33e7-464f-86ec-362dfc2d0f33" />
 
@@ -175,10 +178,13 @@ ng serve
 
 1️⃣ User & Role Management
 <img width="900" alt="Admin User Management" src="https://github.com/user-attachments/assets/f7c19a97-9c69-4a4b-8a81-2fea51fa9f40" />
+
 2️⃣ Restaurant & Menu Approvals
 <img width="900" alt="Menu Approval" src="https://github.com/user-attachments/assets/8f2be580-a28e-47d7-803e-405858fce272" />
+
 3️⃣ Menu & Item Details
 <img width="900" alt="Menu Items" src="https://github.com/user-attachments/assets/940a1d53-2430-498d-a5cb-dc496cbc67d4" />
+
 4️⃣ Order & Payment Oversight
 <img width="900" alt="Payment Oversight" src="https://github.com/user-attachments/assets/c71918a7-33e7-464f-86ec-362dfc2d0f33" />
 
@@ -188,12 +194,16 @@ ng serve
 
 1️⃣ Home / Landing Page
 <img width="900" alt="Customer Home" src="https://github.com/user-attachments/assets/f7c19a97-9c69-4a4b-8a81-2fea51fa9f40" />
+
 2️⃣ Restaurant Listing
 <img width="900" alt="Restaurant Listing" src="https://github.com/user-attachments/assets/8f2be580-a28e-47d7-803e-405858fce272" />
+
 3️⃣ Menu & Item Details
 <img width="900" alt="Menu Page" src="https://github.com/user-attachments/assets/940a1d53-2430-498d-a5cb-dc496cbc67d4" />
+
 4️⃣ Cart & Checkout
 <img width="900" alt="Checkout Page" src="https://github.com/user-attachments/assets/c71918a7-33e7-464f-86ec-362dfc2d0f33" />
+
 5️⃣ Order Tracking
 <img width="900" alt="Order Tracking" src="https://github.com/user-attachments/assets/8c166ce9-e294-4ca8-b7d1-59c5ca8eeb14" />
 
@@ -203,8 +213,10 @@ ng serve
 
 1️⃣ Assigned Orders Management
 <img width="900" alt="Assigned Orders" src="https://github.com/user-attachments/assets/f7c19a97-9c69-4a4b-8a81-2fea51fa9f40" />
+
 2️⃣ Delivery Workflow
 <img width="900" alt="Delivery Workflow" src="https://github.com/user-attachments/assets/8f2be580-a28e-47d7-803e-405858fce272" />
+
 3️⃣ Earnings & History
 <img width="900" alt="Earnings History" src="https://github.com/user-attachments/assets/940a1d53-2430-498d-a5cb-dc496cbc67d4" />
 
