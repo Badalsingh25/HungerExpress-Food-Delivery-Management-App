@@ -142,7 +142,7 @@ ng serve
 
 ---
 ### 📸 Screenshots
-```
+```bash
 ### 🔹 Restaurant Owner Screenshots
 
 1️⃣ **Restaurant Profile Management**  
