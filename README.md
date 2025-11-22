@@ -160,7 +160,7 @@ ng serve
 🔹 Restaurant Owner Screenshots
 
 1️⃣ Restaurant Profile Management
-<img width="900" alt="Restaurant Profile Management" src="https://github.com/user-attachments/assets/f7c19a97-9c69-4a4b-8a81-2fea51fa9f40" />
+<img width="900" alt="Restaurant Profile Management" src="https://github.com/user-attachments/assets/images/Screenshot 2025-11-23 000320.png" />
 
 2️⃣ Menu Management
 <img width="900" alt="Menu Management" src="https://github.com/user-attachments/assets/8f2be580-a28e-47d7-803e-405858fce272" />
