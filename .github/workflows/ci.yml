@@ -45,11 +45,10 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          # lockfile is inside the frontend folder
           cache-dependency-path: frontend/package-lock.json
 
       - name: Install deps
         run: npm ci
 
-      - name: Build Angular (dev build for CI)
-        run: npx ng build --configuration=development
+      - name: Build Angular (no SSR/prerender in CI)
+        run: npx ng build --configuration=development --prerender=false
