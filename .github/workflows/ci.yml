@@ -50,5 +50,6 @@ jobs:
       - name: Install deps
         run: npm ci
 
-      - name: Build Angular (no SSR/prerender in CI)
-        run: npx ng build --configuration=development --prerender=false
+      - name: Build Angular (SPA only)
+        run: npm run build --if-present
+
