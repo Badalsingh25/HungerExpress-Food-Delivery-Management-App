@@ -1,0 +1,64 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/foodexpress}
+    username: ${SPRING_DATASOURCE_USERNAME:root}
+    password: ${SPRING_DATASOURCE_PASSWORD:}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+        default_batch_fetch_size: 50
+  flyway:
+    enabled: false
+    baseline-on-migrate: true
+  mail:
+    host: ${SPRING_MAIL_HOST:smtp.gmail.com}
+    port: ${SPRING_MAIL_PORT:587}
+    username: ${SPRING_MAIL_USERNAME:}
+    password: ${SPRING_MAIL_PASSWORD:}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+  api-docs:
+    path: /v3/api-docs
+    enabled: true
+
+# Twilio Configuration (SMS Service)
+twilio:
+  account-sid: ${TWILIO_ACCOUNT_SID:}
+  auth-token: ${TWILIO_AUTH_TOKEN:}
+  phone-number: ${TWILIO_PHONE_NUMBER:}
+  messaging-service-sid: ${TWILIO_MESSAGING_SERVICE_SID:}
+  enabled: false
+
+app:
+  cors:
+    allowed-origins:
+      - http://localhost:4200
+  jwt:
+    # Base64-encoded 256-bit key. Override in env: set APP_JWT_SECRET
+    secret: ${APP_JWT_SECRET:ZmFrZS1kZXYtc2VjcmV0LWFhc2RmMTIzNDU2Nzg5MHg=}
+    # Access token TTL in ms (default 1 hour); override via APP_JWT_TTL_MS
+    ttl-ms: ${APP_JWT_TTL_MS:3600000}
+  admin:
+    email: ${ADMIN_EMAIL:admin@example.com}
+  razorpay:
+    key-id: ${RAZORPAY_KEY_ID:}
+    key-secret: ${RAZORPAY_KEY_SECRET:}
+    webhook-secret: ${RAZORPAY_WEBHOOK_SECRET:}
+

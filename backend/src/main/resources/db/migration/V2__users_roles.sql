@@ -1,0 +1,39 @@
+-- Users & Roles
+CREATE TABLE IF NOT EXISTS role (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(32) NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS users (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  email VARCHAR(150) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL,
+  full_name VARCHAR(120),
+  phone VARCHAR(32),
+  enabled BOOLEAN NOT NULL DEFAULT TRUE,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS user_roles (
+  user_id BIGINT NOT NULL,
+  role_id BIGINT NOT NULL,
+  PRIMARY KEY (user_id, role_id),
+  CONSTRAINT fk_user_roles_user FOREIGN KEY (user_id) REFERENCES users(id),
+  CONSTRAINT fk_user_roles_role FOREIGN KEY (role_id) REFERENCES role(id)
+);
+
+CREATE TABLE IF NOT EXISTS address (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  user_id BIGINT NOT NULL,
+  line1 VARCHAR(200) NOT NULL,
+  line2 VARCHAR(200),
+  city VARCHAR(80) NOT NULL,
+  state VARCHAR(80) NOT NULL,
+  postal_code VARCHAR(20) NOT NULL,
+  country VARCHAR(80) NOT NULL DEFAULT 'IN',
+  CONSTRAINT fk_address_user FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- Seed roles
+INSERT INTO role (name) VALUES ('CUSTOMER'), ('OWNER'), ('AGENT'), ('ADMIN')
+ON DUPLICATE KEY UPDATE name = VALUES(name);

@@ -1,0 +1,73 @@
+# Production Configuration
+# This file overrides application.yml settings for production
+# Activate with: --spring.profiles.active=prod
+
+server:
+  port: ${SERVER_PORT:8080}
+  error:
+    include-message: never
+    include-binding-errors: never
+    include-stacktrace: never
+  compression:
+    enabled: true
+  http2:
+    enabled: true
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate  # Never auto-update in production
+    show-sql: false
+    open-in-view: false
+    
+  flyway:
+    enabled: true  # Enable migrations in production
+    baseline-on-migrate: true
+    validate-on-migrate: true
+    
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 10MB
+      
+  mail:
+    properties:
+      mail:
+        smtp:
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+
+# Actuator for monitoring
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+      base-path: /actuator
+  endpoint:
+    health:
+      show-details: when-authorized
+      probes:
+        enabled: true
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+
+# Security
+app:
+  cors:
+    allowed-origins: ${ALLOWED_ORIGINS}
+    
+# Logging
+logging:
+  level:
+    root: WARN
+    com.hungerexpress: INFO
+    org.springframework: WARN
+  file:
+    name: logs/hungerexpress.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"

@@ -1,0 +1,132 @@
+<div class="user-dashboard">
+  <!-- User App Bar -->
+  <app-role-navbar></app-role-navbar>
+
+  <!-- Welcome Section -->
+  <section class="welcome-section">
+    <div class="container">
+      <div class="welcome-content">
+        <div class="welcome-text">
+          <h1>Welcome back, {{userName}}!</h1>
+          <p>What would you like to do today?</p>
+        </div>
+        <div class="user-avatar">
+          <img [src]="userProfilePicture" [alt]="userName" class="avatar">
+          <div class="status-indicator" [class.online]="isOnline"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Restaurants Section -->
+  <section class="popular-restaurants-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>🔥 Popular Restaurants for You</h2>
+        <p>Top rated restaurants in your area</p>
+      </div>
+
+      <div class="restaurants-grid">
+        <mat-card class="restaurant-card" *ngFor="let restaurant of popularRestaurants">
+          <img mat-card-image [src]="restaurant.imageUrl" [alt]="restaurant.name" class="restaurant-image">
+          <mat-card-content>
+            <h3>{{restaurant.name}}</h3>
+            <div class="restaurant-meta">
+              <div class="rating">
+                <mat-icon class="star">star</mat-icon>
+                <span>{{restaurant.rating}}</span>
+              </div>
+              <span class="cuisine">{{restaurant.cuisine}}</span>
+            </div>
+            <p class="description">{{restaurant.description}}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-flat-button color="primary" (click)="orderFromRestaurant(restaurant.id)">
+              <mat-icon>restaurant</mat-icon>
+              View Menu
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Actions Section -->
+  <section class="quick-actions-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Quick Actions</h2>
+        <p>Common tasks and shortcuts</p>
+      </div>
+
+      <div class="quick-actions-grid">
+        <mat-card class="quick-action-card" (click)="goToRestaurants()">
+          <mat-icon>restaurant_menu</mat-icon>
+          <h3>Browse Restaurants</h3>
+          <p>Find your favorite food</p>
+        </mat-card>
+
+        <mat-card class="quick-action-card" (click)="goToOrders()">
+          <mat-icon>receipt</mat-icon>
+          <h3>My Orders</h3>
+          <p>Track your order history</p>
+        </mat-card>
+
+        <mat-card class="quick-action-card" (click)="goToProfile()">
+          <mat-icon>person</mat-icon>
+          <h3>My Profile</h3>
+          <p>Update your information</p>
+        </mat-card>
+
+        <mat-card class="quick-action-card" (click)="goToCart()">
+          <mat-icon>shopping_cart</mat-icon>
+          <h3>My Cart</h3>
+          <p>View saved items</p>
+        </mat-card>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Activity Section -->
+  <section class="recent-activity-section" *ngIf="recentOrders.length > 0">
+    <div class="container">
+      <div class="section-header">
+        <h2>Recent Activity</h2>
+        <p>Your latest orders and activities</p>
+      </div>
+
+      <div class="activity-list">
+        <mat-card class="activity-card" *ngFor="let order of recentOrders">
+          <mat-card-content>
+            <div class="activity-content">
+              <div class="activity-icon">
+                <mat-icon>{{getOrderIcon(order.status)}}</mat-icon>
+              </div>
+              <div class="activity-details">
+                <h4>Order #{{order.id}}</h4>
+                <p>{{order.items.length}} items • ₹{{order.total | number:'1.0-0'}}</p>
+                <div class="activity-meta">
+                  <span class="order-status" [class]="'status-' + order.status.toLowerCase()">
+                    {{order.status.replace('_', ' ')}}
+                  </span>
+                  <span class="order-date">{{order.createdAt | date:'short'}}</span>
+                </div>
+              </div>
+              <div class="activity-actions">
+                <button mat-button (click)="trackOrder(order.id)">
+                  <mat-icon>location_on</mat-icon>
+                  Track
+                </button>
+                <button mat-button (click)="reorder(order.id)">
+                  <mat-icon>repeat</mat-icon>
+                  Reorder
+                </button>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </section>
+
+</div>

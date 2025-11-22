@@ -1,0 +1,69 @@
+<div class="landing-page">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <mat-icon class="logo-icon">restaurant</mat-icon>
+        <span class="brand-name">Let's Eat</span>
+      </div>
+      <div class="nav-actions">
+        <button mat-button class="signin-btn" (click)="goToLogin()">
+          <mat-icon>login</mat-icon>
+          Sign In
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Role Selection -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">Let's Eat</h1>
+        <p class="hero-subtitle">Choose your role to access the platform</p>
+        
+        <div class="roles-container">
+          <div class="role-card customer-role" (click)="openRoleSelector()">
+            <div class="role-icon">
+              <mat-icon>person</mat-icon>
+            </div>
+            <h3>Customer</h3>
+            <p>Access the platform as a customer</p>
+          </div>
+
+          <div class="role-card owner-role" (click)="openRoleSelector()">
+            <div class="role-icon">
+              <mat-icon>store</mat-icon>
+            </div>
+            <h3>Restaurant Owner</h3>
+            <p>Manage your restaurant business</p>
+          </div>
+
+          <div class="role-card agent-role" (click)="openRoleSelector()">
+            <div class="role-icon">
+              <mat-icon>delivery_dining</mat-icon>
+            </div>
+            <h3>Delivery Agent</h3>
+            <p>Work as a delivery partner</p>
+          </div>
+
+          <div class="role-card admin-role" (click)="openRoleSelector()">
+            <div class="role-icon">
+              <mat-icon>admin_panel_settings</mat-icon>
+            </div>
+            <h3>Administrator</h3>
+            <p>Manage platform operations</p>
+          </div>
+        </div>
+
+        <div class="cta-section">
+          <button mat-flat-button color="primary" class="primary-cta" (click)="openRoleSelector()">
+            <mat-icon>login</mat-icon>
+            Login to Continue
+          </button>
+          <p class="signup-text">Don't have an account? <a (click)="goToSignup()" class="signup-link">Sign up now</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

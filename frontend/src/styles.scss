@@ -1,0 +1,217 @@
+/* You can add global styles to this file, and also import other style files */
+/* Temporarily disabled TailwindCSS to fix build issues */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* Basic styles for the app */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #1b1f23;
+}
+
+/* Brand tokens */
+:root{
+  --brand-bg: #f6fafc;
+  --brand-surface: #ffffff;
+  --brand-shadow: 0 6px 24px rgba(0,0,0,.06);
+  --brand-radius: 12px;
+}
+
+/* Lighten Material surfaces */
+.mat-mdc-card{
+  background: var(--brand-surface) !important;
+  border-radius: var(--brand-radius) !important;
+  box-shadow: var(--brand-shadow) !important;
+  border: 1px solid #e5eaef !important;
+}
+
+/* Inputs */
+.mat-mdc-form-field{
+  background: var(--brand-surface);
+  border-radius: var(--brand-radius);
+}
+/* Improve outlined form field contrast */
+.mdc-text-field--outlined .mdc-notched-outline__leading,
+.mdc-text-field--outlined .mdc-notched-outline__notch,
+.mdc-text-field--outlined .mdc-notched-outline__trailing{ border-color:#c8d2dc !important; }
+.mdc-text-field--focused .mdc-notched-outline__leading,
+.mdc-text-field--focused .mdc-notched-outline__notch,
+.mdc-text-field--focused .mdc-notched-outline__trailing{ border-color:#3f51b5 !important; }
+.mat-mdc-form-field-label{ color:#344054 !important; opacity:1 !important; }
+/* Ensure readable input text and surface */
+.mdc-text-field{ background:#ffffff !important; }
+.mat-mdc-input-element, .mat-mdc-select-value-text{ color:#0f172a !important; }
+.mat-mdc-select-placeholder{ color:#475569 !important; opacity:1 !important; }
+.mat-mdc-form-field-subscript-wrapper{ color:#475569; }
+.mat-mdc-slide-toggle .mdc-form-field>label{ color:#1f2937; }
+
+/* Page background */
+body{ background: var(--brand-bg); }
+
+/* Dark theme tweaks toggled by RoleNavbarComponent */
+body.dark-theme{
+  --brand-bg: #101418;
+  --brand-surface: #172026;
+  --brand-shadow: 0 6px 24px rgba(0,0,0,.45);
+  color: #e7eef5;
+}
+
+/* Fix: ensure Angular Material list item text is visible */
+.mat-mdc-list-item .mdc-list-item__primary-text,
+.mat-mdc-list-item .mdc-list-item__secondary-text{
+  color: #263238 !important;
+  opacity: 1 !important;
+}
+/* Also override list CSS vars at container level */
+.mat-mdc-list-base,
+mat-nav-list{
+  --mdc-list-list-item-label-text-color: #1b1f23 !important;
+  --mdc-list-list-item-supporting-text-color: #455a64 !important;
+}
+/* Last-resort: target MDC content wrappers */
+.mat-mdc-list-item .mdc-list-item__content,
+.mat-mdc-list-item .mdc-list-item__primary-text span,
+.mat-mdc-list-item .mdc-list-item__primary-text{
+  color: #1b1f23 !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5{ color:#0f172a; }
+
+/* Buttons text ensure readable */
+.mat-mdc-button, .mat-mdc-unelevated-button, .mat-mdc-outlined-button {
+  color:#1b1f23;
+}
+
+/* Icons default tone */
+.mat-icon, .material-icons {
+  color: #374151;
+}
+
+/* Chips contrast */
+.mat-mdc-chip{
+  background: #ffffff !important;
+  border: 1px solid #e5eaef !important;
+  color: #1b1f23 !important;
+}
+
+/* Badges */
+.mat-badge-content{
+  background: #ef4444 !important;
+  color: #ffffff !important;
+}
+
+/* Links */
+a, a:visited { color:#0f3fae; }
+a:hover{ color:#0c2f83; }
+
+/* ================================
+   Themed color variables (page-scoped)
+   Usage: add a class like `theme-olive` to a page/container.
+   Components can reference: var(--c-primary), var(--c-accent), var(--c-text), var(--c-muted-100/200)
+   ================================ */
+
+:root{
+  --c-primary: #3b82f6; /* default blue */
+  --c-accent: #dbeafe;
+  --c-text: #0f172a;
+  --c-muted-100: #f1f5f9;
+  --c-muted-200: #e2e8f0;
+}
+
+/* Olive / Sage (trusted picks, earthy) */
+.theme-olive{
+  --c-primary: #2f4f39; /* forest */
+  --c-accent: #e6f0e8;  /* sage tint */
+  --c-text: #0f1a14;
+  --c-muted-100: #eef3ef;
+  --c-muted-200: #dde7e0;
+}
+
+/* Blush / Rose (soft, coffee screens) */
+.theme-blush{
+  --c-primary: #ff4d88; /* hot pink */
+  --c-accent: #fde7ef;  /* blush tint */
+  --c-text: #111827;
+  --c-muted-100: #f9f5f7;
+  --c-muted-200: #f4e7ee;
+}
+
+/* Indigo (orders/board) */
+.theme-indigo{
+  --c-primary: #6366f1;
+  --c-accent: #e0e7ff;
+  --c-text: #0f172a;
+  --c-muted-100: #eef2ff;
+  --c-muted-200: #e0e7ff;
+}
+
+/* Violet (analytics) */
+.theme-violet{
+  --c-primary: #7c3aed;
+  --c-accent: #ede9fe;
+  --c-text: #0f172a;
+  --c-muted-100: #f3f0ff;
+  --c-muted-200: #e9e3ff;
+}
+
+/* Amber (promotions/feedback) */
+.theme-amber{
+  --c-primary: #f59e0b;
+  --c-accent: #fef3c7;
+  --c-text: #111827;
+  --c-muted-100: #fff7e6;
+  --c-muted-200: #ffe7b3;
+}
+
+/* Helpers */
+.accent-chip{
+  background: var(--c-accent);
+  color: var(--c-primary);
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-weight: 600;
+}
+
+.accent-border{
+  border-color: var(--c-primary) !important;
+}
+
+.accent-bg{
+  background: var(--c-accent) !important;
+}
+
+.accent-text{ color: var(--c-primary) !important; }
+
+/* Dark theme tuning for themed vars */
+body.dark-theme.theme-olive,
+body.dark-theme .theme-olive{
+  --c-accent: #1e2a23;
+  --c-text: #e7f0ea;
+}
+body.dark-theme.theme-blush,
+body.dark-theme .theme-blush{
+  --c-accent: #2b1d24;
+  --c-text: #fdebf2;
+}
+body.dark-theme.theme-indigo,
+body.dark-theme .theme-indigo{
+  --c-accent: #1e1f36;
+  --c-text: #e8ebff;
+}
+body.dark-theme.theme-violet,
+body.dark-theme .theme-violet{
+  --c-accent: #241a38;
+  --c-text: #efe9ff;
+}
+body.dark-theme.theme-amber,
+body.dark-theme .theme-amber{
+  --c-accent: #2a2313;
+  --c-text: #fff1d1;
+}

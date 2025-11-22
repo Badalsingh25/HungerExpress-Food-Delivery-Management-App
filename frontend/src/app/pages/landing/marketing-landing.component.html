@@ -1,0 +1,255 @@
+<div class="marketing-landing">
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <!-- Custom HungerExpress Logo -->
+        <div class="logo-svg">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="url(#logo-gradient)"/>
+            <path d="M20 10C20 10 12 14 12 20C12 26 16 28 20 30C24 28 28 26 28 20C28 14 20 10 20 10Z" fill="white"/>
+            <circle cx="20" cy="18" r="2" fill="#FF6B6B"/>
+            <path d="M17 22C17 22 18.5 24 20 24C21.5 24 23 22 23 22" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FF6B6B"/>
+                <stop offset="1" stop-color="#FFD93D"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="brand-name">HungerExpress</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#restaurants" class="nav-link">Restaurants</a>
+      </div>
+      <div class="nav-actions">
+        <button mat-button class="btn-secondary" (click)="goToLogin()">Sign In</button>
+        <button mat-flat-button color="primary" class="btn-primary" (click)="goToSignup()">Get Started</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- Animated Food Elements -->
+    <div class="floating-foods">
+      <div class="food-item pizza">🍕</div>
+      <div class="food-item burger">🍔</div>
+      <div class="food-item sushi">🍱</div>
+      <div class="food-item taco">🌮</div>
+      <div class="food-item ramen">🍜</div>
+      <div class="food-item icecream">🍦</div>
+    </div>
+    
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title animate-slide-up">
+          Delicious Food
+          <span class="highlight">Delivered Fast</span>
+        </h1>
+        <p class="hero-subtitle animate-slide-up delay-1">
+          Order from your favorite restaurants and get fresh, hot meals delivered to your door in minutes.
+          Join thousands of happy customers who trust HungerExpress for their daily cravings.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number">5000+</div>
+            <div class="stat-label">Restaurants</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">50K+</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">15min</div>
+            <div class="stat-label">Avg Delivery</div>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <button mat-flat-button color="primary" class="btn-cta" (click)="goToSignup()">
+            <mat-icon>restaurant</mat-icon>
+            Order Now
+          </button>
+          <button mat-stroked-button class="btn-secondary-cta" (click)="scrollToRestaurants()">
+            <mat-icon>restaurant_menu</mat-icon>
+            Browse Restaurants
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Choose HungerExpress?</h2>
+        <p>Experience the best food delivery service with features designed for your convenience</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <mat-icon>flash_on</mat-icon>
+          </div>
+          <h3>Lightning Fast</h3>
+          <p>Get your food delivered in under 30 minutes with our optimized delivery network</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <mat-icon>restaurant</mat-icon>
+          </div>
+          <h3>Premium Restaurants</h3>
+          <p>Choose from thousands of top-rated restaurants serving authentic cuisines</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <mat-icon>local_shipping</mat-icon>
+          </div>
+          <h3>Real-time Tracking</h3>
+          <p>Track your order from kitchen to doorstep with live GPS updates</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <mat-icon>payment</mat-icon>
+          </div>
+          <h3>Secure Payments</h3>
+          <p>Multiple payment options with secure transactions and easy refunds</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <mat-icon>support</mat-icon>
+          </div>
+          <h3>24/7 Support</h3>
+          <p>Our customer service team is always ready to help you with any questions</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <mat-icon>local_offer</mat-icon>
+          </div>
+          <h3>Best Deals</h3>
+          <p>Exclusive discounts, promo codes, and loyalty rewards for regular customers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="how-it-works-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>How It Works</h2>
+        <p>Getting your favorite food is just 3 simple steps away</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Choose Restaurant</h3>
+            <p>Browse through our extensive collection of restaurants and cuisines in your area</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Place Order</h3>
+            <p>Select your favorite dishes, customize them, and add to cart with secure checkout</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Enjoy Food</h3>
+            <p>Track your order in real-time and enjoy fresh, hot food delivered to your door</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Restaurants Section -->
+  <section id="restaurants" class="restaurants-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Popular Restaurants Near You</h2>
+        <p>Discover amazing restaurants serving delicious food in your neighborhood</p>
+      </div>
+      <div class="restaurants-grid">
+        <mat-card class="restaurant-card" *ngFor="let restaurant of featuredRestaurants">
+          <img mat-card-image [src]="restaurant.imageUrl" [alt]="restaurant.name">
+          <mat-card-content>
+            <div class="restaurant-info">
+              <h3>{{restaurant.name}}</h3>
+              <div class="restaurant-meta">
+                <div class="rating">
+                  <mat-icon class="star">star</mat-icon>
+                  {{restaurant.rating}}
+                </div>
+                <div class="cuisine">{{restaurant.cuisine}}</div>
+              </div>
+              <p class="description">{{restaurant.description}}</p>
+              <div class="delivery-info">
+                <mat-icon>delivery_dining</mat-icon>
+                <span>30-40 min • ${{restaurant.deliveryFee}} delivery</span>
+              </div>
+            </div>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-flat-button color="primary" (click)="goToRestaurant(restaurant.id)">
+              Order Now
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+      <div class="section-actions">
+        <button mat-stroked-button color="primary" (click)="goToSignup()">
+          View All Restaurants
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <span class="brand-name">HungerExpress</span>
+          </div>
+          <p>Delivering happiness, one meal at a time. Your favorite food, delivered fast and fresh.</p>
+          <div class="social-links">
+            <mat-icon>facebook</mat-icon>
+            <mat-icon>twitter</mat-icon>
+            <mat-icon>instagram</mat-icon>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <a routerLink="/about" class="footer-link">About Us</a>
+          <a routerLink="/careers" class="footer-link">Careers</a>
+          <a routerLink="/press" class="footer-link">Press</a>
+          <a routerLink="/blog" class="footer-link">Blog</a>
+        </div>
+        <div class="footer-section">
+          <h4>Support</h4>
+          <a routerLink="/help" class="footer-link">Help Center</a>
+          <a routerLink="/contact" class="footer-link">Contact Us</a>
+          <a routerLink="/safety" class="footer-link">Safety</a>
+          <a routerLink="/terms" class="footer-link">Terms</a>
+        </div>
+        <div class="footer-section">
+          <h4>For Restaurants</h4>
+          <a routerLink="/partner" class="footer-link">Partner With Us</a>
+          <a routerLink="/restaurant-dashboard" class="footer-link">Restaurant Dashboard</a>
+          <a routerLink="/tools" class="footer-link">Apps & Tools</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 HungerExpress. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</div>

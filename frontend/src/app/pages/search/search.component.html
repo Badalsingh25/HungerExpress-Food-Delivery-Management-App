@@ -1,0 +1,171 @@
+<app-role-navbar></app-role-navbar>
+<div class="search-page">
+  <div class="container">
+    <!-- Header -->
+    <div class="search-header">
+      <h1>Find Your Perfect Meal</h1>
+      <p>Search from thousands of restaurants and dishes near you</p>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <mat-form-field appearance="outline" class="search-input">
+        <mat-label>Search restaurants, dishes, or cuisines</mat-label>
+        <mat-icon matPrefix>search</mat-icon>
+        <input matInput [(ngModel)]="q" (input)="onSearchInput()" placeholder="Pizza, Burger, Chinese..." />
+        <button mat-icon-button matSuffix *ngIf="q" (click)="clearSearch()" aria-label="Clear search">
+          <mat-icon>clear</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters-section">
+      <div class="filters-header">
+        <h3>Filters</h3>
+        <button mat-button color="primary" (click)="clearFilters()" *ngIf="hasActiveFilters()">
+          <mat-icon>refresh</mat-icon>
+          Clear All
+        </button>
+      </div>
+      
+      <div class="filters-grid">
+        <mat-form-field appearance="outline" class="filter-field">
+          <mat-label>Cuisine Type</mat-label>
+          <mat-icon matPrefix>restaurant</mat-icon>
+          <mat-select [(value)]="cuisine" (selectionChange)="onFilterChange()">
+            <mat-option [value]="null">Any Cuisine</mat-option>
+            <mat-option *ngFor="let c of cuisines" [value]="c">
+              {{ formatCuisine(c) }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="filter-field">
+          <mat-label>Minimum Rating</mat-label>
+          <mat-icon matPrefix>star</mat-icon>
+          <mat-select [(value)]="minRating" (selectionChange)="onFilterChange()">
+            <mat-option [value]="null">Any Rating</mat-option>
+            <mat-option [value]="4.5">4.5+ Stars</mat-option>
+            <mat-option [value]="4.0">4.0+ Stars</mat-option>
+            <mat-option [value]="3.5">3.5+ Stars</mat-option>
+            <mat-option [value]="3.0">3.0+ Stars</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="filter-field">
+          <mat-label>Delivery Fee</mat-label>
+          <mat-icon matPrefix>delivery_dining</mat-icon>
+          <mat-select [(value)]="maxDeliveryFee" (selectionChange)="onFilterChange()">
+            <mat-option [value]="null">Any Fee</mat-option>
+            <mat-option [value]="0">Free Delivery</mat-option>
+            <mat-option [value]="50">Under ₹50</mat-option>
+            <mat-option [value]="100">Under ₹100</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <!-- Popular Cuisines Quick Filter -->
+    <div class="quick-filters" *ngIf="!cuisine">
+      <h4>Popular Cuisines</h4>
+      <div class="cuisine-chips">
+        <mat-chip-listbox>
+          <mat-chip-option *ngFor="let c of popularCuisines" (click)="selectCuisine(c)">
+            <mat-icon>{{ getCuisineIcon(c) }}</mat-icon>
+            {{ formatCuisine(c) }}
+          </mat-chip-option>
+        </mat-chip-listbox>
+      </div>
+    </div>
+
+    <!-- Loading State -->
+    <div class="loading-section" *ngIf="loading">
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      <p>Finding the best restaurants for you...</p>
+    </div>
+
+    <!-- Search Results -->
+    <div class="results-section" *ngIf="!loading">
+      <div class="results-header">
+        <h3>
+          <span *ngIf="results.length > 0">{{ results.length }} restaurant{{ results.length !== 1 ? 's' : '' }} found</span>
+          <span *ngIf="results.length === 0 && (q || hasActiveFilters())">No restaurants found</span>
+          <span *ngIf="results.length === 0 && !q && !hasActiveFilters()">Search to discover amazing restaurants</span>
+        </h3>
+        
+        <mat-form-field appearance="outline" class="sort-field" *ngIf="results.length > 0">
+          <mat-label>Sort by</mat-label>
+          <mat-select [(value)]="sortBy" (selectionChange)="onSortChange()">
+            <mat-option value="relevance">Relevance</mat-option>
+            <mat-option value="rating">Rating</mat-option>
+            <mat-option value="deliveryFee">Delivery Fee</mat-option>
+            <mat-option value="name">Name</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <!-- Results Grid -->
+      <div class="restaurants-grid" *ngIf="results.length > 0">
+        <mat-card *ngFor="let restaurant of results" class="restaurant-card">
+          <div class="card-image">
+            <img mat-card-image [src]="restaurant.imageUrl" [alt]="restaurant.name" />
+            <div class="rating-badge">
+              <mat-icon>star</mat-icon>
+              {{ restaurant.rating || 4.5 }}
+            </div>
+          </div>
+          
+          <mat-card-content>
+            <div class="restaurant-header">
+              <h3>{{ restaurant.name }}</h3>
+              <div class="delivery-info">
+                <mat-icon>delivery_dining</mat-icon>
+                <span>₹{{ restaurant.deliveryFee | number:'1.0-0' }}</span>
+              </div>
+            </div>
+            
+            <p class="restaurant-description">{{ restaurant.description }}</p>
+            
+            <div class="restaurant-meta">
+              <mat-chip class="cuisine-chip">{{ formatCuisine(restaurant.cuisine) }}</mat-chip>
+              <div class="delivery-time">
+                <mat-icon>schedule</mat-icon>
+                <span>20-30 mins</span>
+              </div>
+            </div>
+          </mat-card-content>
+          
+          <mat-card-actions align="end">
+            <button mat-button color="primary" (click)="viewMenu(restaurant)">
+              <mat-icon>restaurant_menu</mat-icon>
+              Menu
+            </button>
+            <button mat-flat-button color="accent" (click)="addToCart(restaurant)">
+              <mat-icon>add_shopping_cart</mat-icon>
+              Add to Cart
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <!-- Empty State -->
+      <div class="empty-state" *ngIf="results.length === 0 && (q || hasActiveFilters())">
+        <mat-icon>search_off</mat-icon>
+        <h3>No restaurants found</h3>
+        <p>Try adjusting your filters or search terms</p>
+        <button mat-stroked-button color="primary" (click)="clearAll()">
+          <mat-icon>refresh</mat-icon>
+          Start Over
+        </button>
+      </div>
+
+      <!-- Default State -->
+      <div class="default-state" *ngIf="results.length === 0 && !q && !hasActiveFilters()">
+        <mat-icon>search</mat-icon>
+        <h3>Discover Amazing Food</h3>
+        <p>Search for your favorite restaurants, dishes, or cuisines to get started</p>
+      </div>
+    </div>
+  </div>
+</div>
