@@ -157,47 +157,47 @@ ng serve
 4️⃣ **Analytics Dashboard**  
 <img width="1919" src="https://github.com/user-attachments/assets/c1c18a29-cd26-4fb8-b20d-12305aedad70" />
 
-🔹 Admin Panel
+### 🔹 Admin Panel
 
-1️⃣ User & Role Management
+1️⃣ **User & Role Management**
 <img width="1913" src="https://github.com/user-attachments/assets/d1bcbfb2-d8c8-41cc-9d9e-7ea710f19f33" />
 
-2️⃣ Restaurant Approvals
+2️⃣ **Restaurant Approvals**
 <img width="1897" src="https://github.com/user-attachments/assets/a18cfd75-d519-40ba-a14c-4f474cbb46cd" />
 
-3️⃣ Menu Item Details
+3️⃣ **Menu Item Details**
 <img width="1901" src="https://github.com/user-attachments/assets/968e5f0f-eeb8-45da-af42-beee27b02432" />
 
-4️⃣ Orders & Payments Overview
+4️⃣ **Orders & Payments Overview**
 <img width="1919" src="https://github.com/user-attachments/assets/77e200bd-d58d-4052-bdc2-d827f07a2e88" />
 
-🔹 Customer Experience
+### 🔹 Customer Experience
 
 1️⃣ Home / Landing Page
 <img width="1919" src="https://github.com/user-attachments/assets/52e95012-5a06-41f3-8d08-64967b7170c5" />
 
-2️⃣ Restaurant Listing
+2️⃣ **Restaurant Listing**
 <img width="1919" src="https://github.com/user-attachments/assets/f38cd2ee-a7b7-47ed-85bc-7b69d53a3c3e" />
 
-3️⃣ Menu & Item Details
+3️⃣ **Menu & Item Details**
 <img width="1919" src="https://github.com/user-attachments/assets/8a50816d-32b3-4c16-aa62-ade5c09b5d48" />
 
-4️⃣ Cart & Checkout
+4️⃣ **Cart & Checkout**
 <img width="1919" src="https://github.com/user-attachments/assets/4515d21f-37a1-4e5e-ab29-e9dd294402ea" />
 
-5️⃣ My Orders & Payments
+5️⃣ **My Orders & Payments**
 <img width="1919" src="https://github.com/user-attachments/assets/ffa7f3c2-0e00-4910-8316-a1f80d20561e" />
 <img width="1919" src="https://github.com/user-attachments/assets/f7895d87-ae9f-4f05-b5f2-23ea32fcecf8" />
 
-🔹 Delivery Agent Panel
+### 🔹 Delivery Agent Panel
 
-1️⃣ Assigned Orders
+1️⃣ **Assigned Orders**
 <img width="1919" src="https://github.com/user-attachments/assets/a5e358f7-6082-4429-829a-aa88d055c4f5" />
 
-2️⃣ Delivery Workflow
+2️⃣ **Delivery Workflow**
 <img width="1919" src="https://github.com/user-attachments/assets/dcd9724d-56ee-4c27-bcc2-d65b0bf3aa75" />
 
-3️⃣ Delivery Completion Status
+3️⃣ **Delivery Completion Status**
 <img width="1919" src="https://github.com/user-attachments/assets/011cf796-588a-40df-9735-9d0635aaafbf" />
 
 ---
