@@ -1,154 +1,113 @@
-# HungerExpress - Food Delivery Platform
+# 🍽️ HungerExpress – Food Delivery Platform
 
-A full-stack food delivery application built with Angular (Frontend) and Spring Boot (Backend).
+Your Swiggy/Zomato-style full-stack food delivery and restaurant management web app.  
+
+HungerExpress is built with **Angular** (frontend) and **Spring Boot** (backend) and supports multiple roles – **Customer, Restaurant Owner, Delivery Agent, and Admin** – all working together in a production-like system.
 
 ---
 
-## 🚀 Quick Start
+## 🔖 Tech & Project Badges
 
-### Prerequisites
-- Java 17+
-- Node.js 18+
-- MySQL 8.0+
-- Maven
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
 
-### Start the Application
+---
 
-Start services manually in two terminals:
+## 📌 Overview
+
+**HungerExpress is a scalable, full-stack food delivery and restaurant management platform.**
+
+- Customers can browse restaurants and menus, apply coupons, manage carts, place orders, pay online, and track order status in real time.
+- Restaurant owners manage restaurants, menus, incoming orders, and basic analytics from their own dashboard.
+- Delivery agents see assigned orders, update live order status, toggle availability, and view earnings.
+- Admins oversee the entire platform – approving restaurants and menus, managing users/roles, and monitoring revenue and system activity.
+
+The system uses **JWT-based authentication** with strict **role-based access control (RBAC)** for **Customer, Owner, Agent, and Admin** dashboards.  
+It is built as a **production-like project** with clean REST APIs, robust validation and error handling, Flyway-based DB migrations, and a modern, responsive UI that mimics real food-delivery platforms.
+
+---
+
+## 📚 Tech Stack
+
+| Layer           | Technologies                                          | Purpose                                  |
+|-----------------|-------------------------------------------------------|------------------------------------------|
+| Frontend        | Angular, TypeScript, HTML, SCSS                       | SPA, UI components, routing              |
+| Backend         | Spring Boot, Spring Web, Spring Security, Spring Data | REST APIs & business logic               |
+| Database        | MySQL, Flyway migrations, custom SQL scripts          | Persistent data & schema versioning      |
+| Auth & Security | JWT, Role-Based Access Control (RBAC)                 | Authentication & authorization           |
+| Dev & Build     | Maven, npm, Angular CLI, IntelliJ / VS Code          | Development & build tooling              |
+| Integrations    | Email (Spring Mail), Payment gateway hooks, SMS hook  | Notifications & payment workflows        |
+
+---
+
+## 🌟 Core Features
+
+### 👤 Customer
+
+- Browse restaurants, cuisines, and menus with categories.
+- Add items to cart, apply coupons, and place orders.
+- View order history and live order tracking (placed → preparing → out for delivery → delivered).
+- Manage profile, address and basic settings.
+
+### 🏪 Restaurant Owner
+
+- Create and manage restaurant profiles.
+- Add, update, or disable menu items and categories.
+- Submit menus for **admin approval**.
+- View and manage incoming orders for owned restaurants.
+- Basic analytics: popular items, total orders, revenue snapshot.
+
+### 🚚 Delivery Agent
+
+- See assigned orders in real time.
+- Update order status (accepted, picked up, en route, delivered).
+- Toggle **online / offline** availability.
+- Track earnings and transaction history.
+
+### 🛡 Admin
+
+- Manage all users and roles (Customer / Owner / Agent / Admin).
+- Approve or reject restaurants and menu items.
+- Monitor platform activity and revenue overview.
+- Use DB audit scripts to validate data consistency and health.
+
+---
+
+## 🧱 Architecture
+
+- **Frontend** – Angular SPA consuming REST APIs using HTTP services, route guards, interceptors, and stateful flows.
+- **Backend** – Monolithic Spring Boot app with layered architecture (controller → service → repository).
+- **Database** – MySQL schema managed using Flyway migrations and additional SQL scripts for debugging and seeding.
+- **Security** – Stateless JWT authentication; RBAC enforced at API level using Spring Security.
+- **Config** – Environment-based `.env` / `application-*.yml` for dev and prod.
+
+---
+
+## 🗂 Project Structure
+
 ```bash
-# Terminal 1 - Backend (Port 8080):
-cd backend
-mvn spring-boot:run
-
-# Terminal 2 - Frontend (Port 4200):
-cd frontend
-ng serve
-```
-
-### Access the Application
-- Frontend: http://localhost:4200
-- Backend API: http://localhost:8080
-- Database: foodexpress (MySQL on localhost:3306)
-
----
-
-## 📚 Documentation
-
-- **database/** - Database schema and seed data
-- **backend/CHECK_DATABASE_STATUS.sql** - Check database status
-- **backend/LINK_EXISTING_ORDERS_TO_AGENTS.sql** - Setup agent earnings
-
----
-
-## 🏗️ Project Structure
-
-```
-ProductDevelopment/
-├── frontend/           # Angular application (Port 4200)
+HungerExpress-Food-Delivery-Management-App/
+├── frontend/                # Angular application (Port 4200)
 │   ├── src/
-│   │   ├── app/       # Application components
-│   │   └── environments/
-│   ├── proxy.conf.json # API proxy configuration
+│   │   ├── app/             # Components, pages, services, guards
+│   │   └── environments/    # env config
+│   ├── proxy.conf.json      # API proxy configuration
 │   └── angular.json
 │
-├── backend/           # Spring Boot application (Port 8080)
+├── backend/                 # Spring Boot application (Port 8080)
 │   ├── src/
 │   │   ├── main/
-│   │   │   ├── java/  # Java source code
+│   │   │   ├── java/com/hungerexpress/   # Java source code
 │   │   │   └── resources/
 │   │   │       ├── application.yml
-│   │   │       └── db/migration/  # Flyway migrations
+│   │   │       └── db/migration/         # Flyway migrations
 │   └── pom.xml
 │
-└── database/          # Database scripts
+└── database/                # SQL scripts (optional manual setup/debug)
     ├── 01_complete_schema.sql
-    └── 02_seed_data.sql
-```
-
----
-
-## 🔧 Configuration
-
-### Frontend (Angular)
-- **Port:** 4200 (default)
-- **Proxy:** Configured in `proxy.conf.json` → Backend on 8080
-- **Environment:** `src/environments/environment.ts`
-
-### Backend (Spring Boot)
-- **Port:** 8080
-- **Database:** `foodexpress` on localhost:3306
-- **Config:** `src/main/resources/application.yml` (uses environment variables for credentials)
-
----
-
-## 🎯 User Roles
-
-1. **CUSTOMER** - Browse restaurants, place orders, track delivery
-2. **OWNER** - Manage restaurants, menus, and orders
-3. **AGENT** - Deliver orders, track earnings
-4. **ADMIN** - Manage users, approve menus, system administration
-
----
-
-## 🐛 Troubleshooting
-
-### Issue: Port 4200 already in use
-```bash
-netstat -ano | findstr :4200
-taskkill /PID <pid> /F
-```
-
-### Issue: Backend not connecting
-```bash
-# Check if backend is running
-curl http://localhost:8080/api/orders
-
-# Verify MySQL is running
-mysql -u root -p -e "SHOW DATABASES;"
-```
-
-### Issue: Agent earnings showing zeros
-```bash
-# Run in MySQL:
-mysql -u root -p foodexpress < backend/LINK_EXISTING_ORDERS_TO_AGENTS.sql
-```
-
-For more help, see **[START_HERE.md](START_HERE.md)**
-
----
-
-## 🛠️ Development
-
-### Run Tests
-```bash
-# Frontend
-cd frontend
-npm test
-
-# Backend
-cd backend
-mvn test
-```
-
-### Build for Production
-```bash
-# Frontend
-cd frontend
-ng build --configuration production
-
-# Backend
-cd backend
-mvn clean package
-```
-
----
-
-## 📝 License
-
-Private project for educational purposes.
-
----
-
-## 👨‍💻 Author
-
-HungerExpress Team
+    ├── 02_seed_data.sql
+    └── other_debug_scripts.sql
