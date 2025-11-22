@@ -112,7 +112,7 @@ HungerExpress-Food-Delivery-Management-App/
     ├── 02_seed_data.sql
     └── other_debug_scripts.sql
 
----
+```
 
 🚀 Getting Started
 ✅ Prerequisites
@@ -127,25 +127,25 @@ MySQL 8+
 
 Maven
 
----
+```
 
 ▶️ Backend Setup
 cd backend
 mvn spring-boot:run
 
----
+```
 
 ▶️ Frontend Setup
 cd frontend
 npm install
 ng serve
 
----
+```
 
 ✅ Frontend → http://localhost:4200
 ✅ Backend API → http://localhost:8080
 
----
+```
 
 📸 Screenshots
 
@@ -159,7 +159,7 @@ ng serve
 
 4️⃣ Admin Dashboard
 
----
+```
 
 📊 Languages Breakdown
 
@@ -168,11 +168,11 @@ ng serve
 
 
 
----
+```
 
 🤝 Contributing
 
----
+```
 
 Contributions are welcome! 🎉
 
@@ -193,7 +193,7 @@ Push & open a Pull Request ✅
 ✅ Issues, docs, UI, backend & testing contributions encouraged
 ✅ Beginner-friendly repo
 
----
+```
 
 📬 Contact
 
@@ -203,14 +203,14 @@ Push & open a Pull Request ✅
 
 🔗 LinkedIn — (Add your profile link)
 
----
+```
 
 📝 License
 
 This project is licensed under the MIT License.
 Feel free to use, modify & contribute responsibly ✅
 
----
+```
 
 ⭐ Support the Project
 
@@ -223,7 +223,7 @@ If you like this project:
 💙 Built with passion, clean architecture & real-world development practices
 
 
----
+```
 
 ✅ Fully structured  
 ✅ Includes everything from your screenshots  
