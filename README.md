@@ -113,14 +113,9 @@ HungerExpress-Food-Delivery-Management-App/
     └── other_debug_scripts.sql
 
 ```
-
 🚀 Getting Started
-
----
-
 ✅ Prerequisites
 
-```
 Java 17+
 
 Node.js 18+
@@ -131,27 +126,20 @@ MySQL 8+
 
 Maven
 
-```
-
 ▶️ Backend Setup
-```
 cd backend
 mvn spring-boot:run
 
-```
 ▶️ Frontend Setup
-```
 cd frontend
 npm install
 ng serve
-```
+
 
 ✅ Frontend → http://localhost:4200
 
 ✅ Backend API → http://localhost:8080
 
-```
----
 📸 Screenshots
 🔹 Restaurant Owner Dashboard
 
@@ -209,29 +197,24 @@ ng serve
 
 3️⃣ Delivery Completion Status
 <img width="1919" src="https://github.com/user-attachments/assets/011cf796-588a-40df-9735-9d0635aaafbf" />
----
 
-```
-
-📊 Languages
-TypeScript   54.7% ████████████████████░░░░░░
-Java         33.2% ████████████░░░░░░░░░░░░░░
-SCSS          5.7% ██░░░░░░░░░░░░░░░░░░░░░░░░
-HTML          5.1% ██░░░░░░░░░░░░░░░░░░░░░░░░
-PowerShell    1.1% ░░░░░░░░░░░░░░░░░░░░░░░░░░
-JavaScript    0.1% ░░░░░░░░░░░░░░░░░░░░░░░░░░
-Dockerfile    0.1% ░░░░░░░░░░░░░░░░░░░░░░░░░░
-
-```
------
+📊 Languages (GitHub Stats)
+TypeScript   54.7%
+Java         33.2%
+SCSS          5.7%
+HTML          5.1%
+Others        1.3%
 
 🤝 Contributing
-<p align="center"> <a href="https://github.com/Badalsingh25/mind-ease/fork"> <img src="https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge&logo=github" /> </a> <a href="https://github.com/Badalsingh25/mind-ease/fork"> <img src="https://img.shields.io/badge/Fork%20Repo-blue?style=for-the-badge&logo=github" /> </a> <a href="https://github.com/Badalsingh25/mind-ease/pulls"> <img src="https://img.shields.io/badge/Pull%20Request-orange?style=for-the-badge&logo=git" /> </a> </p>
 
----
+Contributions, feature requests, and bug reports are welcome!
 
 📩 Contact
-<p align="center"> <a href="mailto:badalkusingh8@gmail.com"> <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /> </a> <a href="https://github.com/Badalsingh25"> <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /> </a> <a href="https://www.linkedin.com/in/badal-singh-767911333/"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /> </a> </p>
 
----
+📧 Email: badalkusingh8@gmail.com
+
+🐙 GitHub: https://github.com/Badalsingh25
+
+💼 LinkedIn: https://www.linkedin.com/in/badal-singh-767911333/
+
 ⭐ If you like this project, don’t forget to star the repo! ⭐
