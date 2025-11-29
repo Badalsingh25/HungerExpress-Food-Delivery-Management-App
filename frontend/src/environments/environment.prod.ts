@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
-  apiUrl: '/api',
+  apiUrl: 'https://hungerexpress-food-delivery-management.onrender.com/api',
   razorpayKeyId: 'rzp_test_RL6edgpApWColT',
-  googleMapsApiKey: 'AIzaSyBE22zEVei2APw8hzZtzES117OYIp2KhqMHE',
+  googleMapsApiKey: '',
   enableSms: false,
 };
