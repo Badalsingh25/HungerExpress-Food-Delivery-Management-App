@@ -599,7 +599,7 @@ export class AdminMenuApprovalsComponent implements OnInit {
     }
     // If imageUrl starts with /api, prepend the backend server URL
     if (imageUrl.startsWith('/api')) {
-      return `http://localhost:8080${imageUrl}`;
+      return imageUrl;
     }
     return imageUrl;
   }
