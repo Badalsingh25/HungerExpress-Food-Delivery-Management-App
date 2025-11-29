@@ -1,0 +1,18 @@
+[build]
+  command = "npm run build"
+  publish = "dist/HungerExpress"
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://hungerexpress-food-delivery-management.onrender.com/api/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/uploads/*"
+  to = "https://hungerexpress-food-delivery-management.onrender.com/uploads/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
