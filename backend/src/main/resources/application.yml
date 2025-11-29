@@ -1,20 +1,23 @@
 server:
-  port: 8080
+  # Use PORT env if present (Render), else 8080 (local)
+  port: ${PORT:8080}
 
 spring:
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/foodexpress}
-    username: ${SPRING_DATASOURCE_USERNAME:root}
-    password: ${SPRING_DATASOURCE_PASSWORD:}
+    # Same pattern as application-prod.yml
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:foodexpress}?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:}
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: update   # ok for local dev; prod overrides to validate
     open-in-view: false
     properties:
       hibernate:
         format_sql: true
         default_batch_fetch_size: 50
   flyway:
+    # keep disabled for local; prod file has its own flyway config
     enabled: false
     baseline-on-migrate: true
   mail:
