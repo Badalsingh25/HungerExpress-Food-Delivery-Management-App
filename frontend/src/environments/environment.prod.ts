@@ -2,6 +2,6 @@ export const environment = {
   production: true,
   apiUrl: '/api',
   razorpayKeyId: 'rzp_test_RL6edgpApWColT',
-  googleMapsApiKey: '', // Add your Google Maps API key here
+  googleMapsApiKey: 'AIzaSyBE22zEVei2APw8hzZtzES117OYIp2KhqMHE',
   enableSms: false,
 };
