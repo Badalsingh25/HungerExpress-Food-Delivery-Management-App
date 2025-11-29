@@ -22,6 +22,9 @@ public class AdminNotificationService {
     
     @Value("${app.admin.email:badalkusingh8@gmail.com}")
     private String adminEmail;
+
+    @Value("${app.frontend-url:http://localhost:4200}")
+    private String frontendUrl;
     
     public void notifyNewItemSubmitted(MenuItem item, Restaurant restaurant) {
         try {
@@ -48,7 +51,7 @@ public class AdminNotificationService {
                 ⏰ Submitted At: %s
                 
                 Please review and approve/reject this item in the admin panel:
-                http://localhost:4200/admin/menu-approvals
+                %s/admin/menu-approvals
                 
                 This item will not be visible to customers until you approve it.
                 
@@ -60,7 +63,8 @@ public class AdminNotificationService {
                 item.getPrice(),
                 item.getDescription() != null ? item.getDescription() : "N/A",
                 item.getCategory() != null ? item.getCategory().getName() : "N/A",
-                item.getSubmittedAt()
+                item.getSubmittedAt(),
+                frontendUrl
             );
             
             sendEmail(adminEmail, subject, body);
@@ -88,7 +92,7 @@ public class AdminNotificationService {
                 ⏰ Updated At: %s
                 
                 Please review the changes and approve/reject:
-                http://localhost:4200/admin/menu-approvals
+                %s/admin/menu-approvals
                 
                 This item has been temporarily hidden from customers until re-approved.
                 
@@ -99,7 +103,8 @@ public class AdminNotificationService {
                 restaurant.getName(),
                 item.getPrice(),
                 item.getDescription() != null ? item.getDescription() : "N/A",
-                item.getSubmittedAt()
+                item.getSubmittedAt(),
+                frontendUrl
             );
             
             sendEmail(adminEmail, subject, body);
