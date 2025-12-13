@@ -141,6 +141,14 @@ ng serve
 ✅ Backend API → http://localhost:8080
 
 ---
+
+## 🌐 Deployment
+
+The application is live and publicly accessible here 👇
+
+🔗 **https://hungerexpress-online-food-delivery-ap.netlify.app/**
+
+---
 ### 📸 Screenshots
 
 ### 🔹 Restaurant Owner Screenshots
